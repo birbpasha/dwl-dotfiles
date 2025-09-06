@@ -1,0 +1,70 @@
+*{
+    font-family: JetBrainsMono;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #fbf1c7;
+}
+
+#workspaces{
+	color: #282828;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+#workspaces button{
+	color: #282828;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 1px 10px;
+    font-weight: bolder;
+    background-color: #282828;
+}
+
+#workspaces button:not(.active){
+	color: #fbf1c7;
+	background-color: #282828;
+}
+
+#workspaces button.active, #workspaces button.focused{
+	color: #282828;
+    padding: 0 22px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    
+    background-color: #fbf1c7;
+}
+
+
+#workspaces button:not(.empty):not(.active) {
+	background-color: #454545;
+}
+
+#workspaces button.active:not(.empty),
+#workspaces button.focused:not(.empty) {
+  background-color: #fbf1c7;
+}
+
+
+#tray,
+#mpd,
+#custom-weather,
+#cpu, 
+#temperature, 
+#memory,
+#sway-mode,
+#backlight, 
+#pulseaudio, 
+#custom-vpn,
+#disk,
+#custom-recorder,
+#custom-audiorec,
+#battery, 
+#clock, 
+#network {
+	padding: 0 10px;
+}
+
